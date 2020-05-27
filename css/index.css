@@ -72,12 +72,7 @@ header nav .top-menu li a:hover {
         margin-top: 10;
     }  
 
-    header .banner h1 {
-  
-
-    }
-
- }
+}
 
 header .subtitle {
     color: black;
@@ -95,6 +90,15 @@ header .newepisode {
     margin-top: 3em;
     margin-bottom: 0;
    
+}
+/* comment
+
+main {
+    max-width: 100%;
+    text-align: center;
+    padding-left: 8em;
+    padding-right: 8em;
+    margin: 0;
 }
 
 main #aboutus {
@@ -140,3 +144,4 @@ main #team div {
     flex-wrap: wrap;
     text-align: center;
 }
+*/
