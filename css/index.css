@@ -1,5 +1,25 @@
  @import url("https://use.typekit.net/eoz2brh.css");
 
+ @media (min-width: 500px) {
+    header nav {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    header nav .top-menu {
+        flex: 1;
+        margin-top: 10;
+    }  
+
+    main {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+}
 :root {
     font-family: league-gothic, sans-serif;
     --color: black;
@@ -13,42 +33,46 @@ body {
 }
 
 header {
-    background-image:url(../img/cover-yellow.jpg);
-    min-height: 700px;
-    background-position: top;
+    background-image:url(../img/cover.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column; 
+    align-items: left;
+    justify-content: flex-start;
+    margin: auto;
+   
 }
 
-header .banner h1 {
+.banner h1 {
     font-family: league-gothic, sans-serif;
     font-style: italic;
     color: var(--accent-color);
     font-weight: 400;
-    font-size: 8rem;
-    padding-left: 0.5em;
-    margin: 0;
+    font-size: 9rem;
+    padding-left: 0.75em;
+    padding-bottom: 0;
+    margin: auto;
 }
 
-header nav .logo {
+.logo {
     font-family: league-gothic, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 2.5rem;
-    padding-left: 2em;
+    font-size: 4.5rem;
+    padding-left: 1.5em;
 }
 
-header nav .top-menu {
+.top-menu {
     display: flex;
     list-style-type: none;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-right: 5em;
     padding-left: 30em;
     margin-top: 1em;
 }
 
-header nav .top-menu li a {
+.top-menu li a {
     font-size: 1.5rem;
     color: var(--main-color);
     text-transform: none;
@@ -56,52 +80,60 @@ header nav .top-menu li a {
     border: 1px solid transparent;   
 }
 
-header nav .top-menu li a:hover {
+.top-menu li a:hover {
     border-bottom: 1px solid black; 
 }
 
-@media (min-width: 500px) {
-    header nav {
-        display: flex;
-        align-items: center;
-        
-    }
-
-    header nav .top-menu {
-        flex: 1;
-        margin-top: 10;
-    }  
-
-}
-
-header .subtitle {
+.subtitle {
     color: black;
     font-size: 2rem;
-    margin-left: 2em;
+    padding-left: 3.5em;
     
 }
 
-header .newepisode {
+.new-episode {
     flex: 1;
     color: white;
     text-transform: uppercase;
     font-size: 3rem;
-    text-align: center;
-    margin-top: 3em;
-    margin-bottom: 0;
+    text-align: left;
+    padding-left: 2.25em;
    
 }
-/* comment
 
-main {
-    max-width: 100%;
-    text-align: center;
-    padding-left: 8em;
-    padding-right: 8em;
-    margin: 0;
+.countdown {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+    padding-left: 1.5em;
+    font-size: 3rem;
+
+   
 }
 
-main #aboutus {
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 35px;
+    
+}
+
+.time h2 {
+    margin: auto;
+}
+
+
+main {
+    max-width: 1090px;
+   
+    padding-left: 8em;
+    padding-right: 8em;
+    margin: auto;
+}
+
+.aboutus {
     min-height: 200px;
     background-position: top;
     display: flex;
@@ -111,37 +143,53 @@ main #aboutus {
     text-align: center;
 }
 
-main #aboutus h2 {
+.aboutus h2 {
     font-size: 3rem;
     font-style: normal;
     font-weight: 100;
 }
 
-main #aboutus p {
+.aboutus p {
     font-size: 1.5rem;
     font-style: normal; 
     font-weight: 100;
 }
 
-main #team h2 {
+.team h2 {
     min-height: 200px;
-    background-position: top;
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-main #team h2 {
     font-size: 3rem;
     font-style: normal;
     font-weight: 100;
 }
 
-main #team div {
-    min-height: 200px;
-    background-position: top;
+.team {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
 }
-*/
+
+
+.episodes h2 {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 100;
+    
+}
+
+.episodes {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    }
+
+
+
+
+
+
+
+

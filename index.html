@@ -9,12 +9,12 @@
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <header>
+      <header>
             <nav>
                 <p class="logo">Podcast</p>
                 <ul class="top-menu">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="banner">Home</a>
                     </li>
                     <li>
                         <a href="#aboutus">Über uns</a>
@@ -33,23 +33,39 @@
                     </li>
                 </ul>
             </nav>
-            <div class="banner">
+            <div class="banner" id="banner">
                 <h1>Fremdgehen</h1>
                 <p class="subtitle">Zwei Ukrainerinnen in Deutschland über das Fremd- und Vertrautsein</p>
-                <p class="newepisode">22.05. Neue Folge online</p>
+            </div>
+            <div class="year" id="year"></div>
+                 <p class="new-episode">Neue Folge online</p>
+                 <div id="countdown" class="countdown">
+                    <div class="time">
+                    <h2 id="days">00</h2>
+                    <small>Tage</small>
+                 </div>
+                 <div class="time">
+                    <h2 id="hours">00</h2>
+                    <small>Stunden</small>
+                 </div>
+                 <div class="time">
+                    <h2 id="minutes">00</h2>
+                    <small>Minuten</small>
+                 </div>
+                 <div class="time">
+                    <h2 id="seconds">00</h2>
+                   <small>Sekunden</small>
+                 </div>
             </div>
         </header>
-
-        
-        <!--comment
         <main>
-            <article id="aboutus">
+            <div class="aboutus" id="aboutus">
                 <h2>Über uns</h2>
                 <p>Wir sind Maria und Mariya, zwei Ukrainerinnen, die in Deutschland leben, studieren und arbeiten. In diesem Podcast versuchen wir rauszufinden, wann sich Deutschland wie zu Hause und wann wie ein fremdes Land anfühlt. Wir reden über Identitäts- und Magenprobleme, Geld- und  Emotionssparsamkeit und über das Abschließen der Versicherungen und alter Freundschaften.</p>
-            </article>
-            <article id="team">
+            </div>
+            <div class="team" id="team">
                 <h2>Team</h2>
-                <div>
+                <div class="team" id="members">
                     <h3>Maria Svidryk</h3>
                     <h4>Moderatorin</h4>
                     <p>Dorfkind mit zwei Abschlüssen und ohne Plan</p>
@@ -64,16 +80,10 @@
                     <a href="https://www.instagram.com/k0marie/">
                         <img src="img/instagram.png" alt="instagram icon">
                     </a>
-                    <h3>Mono Pepe</h3>
-                    <h4>Musiker</h4>
-                    <p>Musiker und multiinstrumentalisches Talent</p>
-                    <img src="img/mono-pepe-portrait.png" alt="mono pepe portrait">
-                    <a href="https://www.instagram.com/moono_pepe/">
-                        <img src="img/instagram.png" alt="instagram icon">
-                    </a>
                 </div>
-            </article>
-            <article id="episodes">
+            </div>
+            <div class="episodes" id="episodes">
+                <h2>Folgen</h2>
                 <h3>Folge 1</h3>
                 <a href="https://soundcloud.com/podcast-fremdgehen/fremdgehen-folge-1">
                     <img src="img/icon-podcast.png" alt="icon podcast">
@@ -99,8 +109,8 @@
                     <img src="img/icon-podcast.png" alt="icon podcast">
                 </a>
                 <p>Man ist, was man isst: Buchweizen gegen Nudeln</p>
-            </article>
-            <article id="wheretofindus">
+            </div>
+            <div class="wheretofindus" id="wheretofindus">
                 <h2>Wo findet ihr uns?</h2>
                 <a href="https://open.spotify.com/show/1cfsgWWmgGhSJe5cAtn2l0?si=JXcx2ZIvSGOyKnvNPqQvjA">
                     <img src="img/spotify-icon.png" alt="spotify icon">
@@ -117,8 +127,8 @@
                 <a href="https://www.facebook.com/fremdgehenpodcast/">
                     <img src="img/facebook-icon.png" alt="facebook-icon">
                 </a>
-            </article>
-            <article id="contact">
+            </div>
+            <div class="contact" id="contact">
                 <h2>Kontakt</h2>
                 <h3>Hast du Fragen oder Anregungen?</h3>
                 <form action="https://formspree.io/moqkevbg" method="POST">
@@ -140,11 +150,14 @@
                     <input type="submit">
                     <input type="reset">
                 </form>
-            </article>
+            </div>
         </main>
         <footer>
             <p>All Rights Reserved &#169;</p>
         </footer>
+
+       
+        <script src="js/index.js"></script>
     </body>
 </html>
--->
+
