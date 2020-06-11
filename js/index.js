@@ -1,20 +1,20 @@
-const days = document.getElementById("days");
-const hours = document.getElementById("hours");
-const minutes = document.getElementById("minutes");
-const seconds = document.getElementById("seconds");
-const countdown = document.getElementById("countdown");
-const year = document.getElementById("year");
+(function(){
+   const days = document.getElementById("days");
+   const hours = document.getElementById("hours");
+   const minutes = document.getElementById("minutes");
+   const seconds = document.getElementById("seconds");
+   const countdown = document.getElementById("countdown");
+   const year = document.getElementById("year");
 
-const currentDate = new Date().getFullYear();
+   const currentDate = new Date().getFullYear();
 
-const concertDate = new Date(`June 12 ${currentDate} 00:00:00`);
+  const concertDate = new Date(`June 12 ${currentDate} 00:00:00`);
 
-// Update countdown time
-function updateCountdown() {
-  const currentTime = new Date();
-  const diff = concertDate - currentTime;
+  function updateCountdown() {
+     const currentTime = new Date();
+    const diff = concertDate - currentTime;
 
-  const d = Math.floor(diff / 1000 / 60 / 60 / 24);
+    const d = Math.floor(diff / 1000 / 60 / 60 / 24);
   const h = Math.floor(diff / 1000 / 60 / 60) % 24;
   const m = Math.floor(diff / 1000 / 60) % 60;
   const s = Math.floor(diff / 1000) % 60;
@@ -29,11 +29,7 @@ function updateCountdown() {
 // Run every second
 setInterval(updateCountdown, 1000);
 
-const iconImg = document.querySelector('podcast-icon');
+})();
 
-function podcastIcon () {
 
-image.style.width = '50%'
-image.style.height = 'auto'
 
-}

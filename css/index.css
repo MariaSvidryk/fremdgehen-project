@@ -1,13 +1,23 @@
  @import url("https://use.typekit.net/eoz2brh.css");
 
+
  @media (min-width: 500px) {
+
+    header {
+        display: flex;
+    }
     header nav {
         display: flex;
         align-items: center;
     }
 
+    header .logo {
+        display: flex;
+        align-items: center;
+
+    }
+
     header nav .top-menu {
-        flex: 1;
         margin-top: 10;
     }  
 
@@ -15,7 +25,10 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        column-count: 1; 
     }
+
+
 
 }
 :root {
@@ -32,12 +45,17 @@ header {
     background-image:url(../img/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left;
     display: flex;
     flex-direction: column; 
     align-items: left;
     justify-content: flex-start;
     margin: auto;
-   
+
+}
+
+header nav li {
+    margin: 0 5px;
 }
 
 .banner h1 {
@@ -49,6 +67,10 @@ header {
     padding-left: 0.75em;
     padding-bottom: 0;
     margin: auto;
+}
+
+nav {
+    justify-content: space-between;
 }
 
 .logo {
@@ -63,13 +85,14 @@ header {
     margin-inline-end: 0px;
 }
 
-.top-menu {
+header nav .top-menu {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     justify-content: space-between;
+    align-items: center;
     padding-right: 5em;
-    padding-left: 30em;
-    margin-top: 1em;
+  
 }
 
 .top-menu li a {
@@ -183,14 +206,13 @@ main {
 .members h3 {
     display: flex;
     justify-content: center;
-    align-self: flex-start;
     font-size: 2rem;
     font-weight: 100;
 }
 
 .members h4 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-self: center;
     font-size: 1.5rem;
     font-weight: 100;
@@ -206,19 +228,28 @@ main {
     opacity: 70%;
 }
 
+.member-svidryk {
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.member-zoryk {
+    flex-direction: column;
+    align-content: flex-end;
+}
 .members img {
-    display: flex;
     border-top-left-radius: 80%;
     border-top-right-radius: 80%;
     border-bottom-right-radius: 80%;
     border-bottom-left-radius: 80%;
-    object-position: left;
+    margin: 0 5rem;
+    align-items: center;
 
 }
 
 .members .instagram-icon {
     width: 40px;
-    height: auto;
+    height: 40px;
 }
 
 .episodes {
@@ -237,9 +268,9 @@ main {
 }
 
 .all-episodes {
-    display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
+    column-count: 2;
     margin-bottom: 60px;
     }
 
@@ -259,12 +290,62 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: 1rem;
 }
 
 .podcast-icon {
     width: 50px;
     height: 50px;
+    padding: 1rem;
+}
+
+.episode-one {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+}
+
+.episode-two {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+}
+
+.episode-three {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+}
+
+.episode-four {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+}
+
+.episode-five {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+}
+
+.episode-six {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+}
+
+.episode-seven {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+}
+
+.episode-eight {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+   
 }
 
 .wheretofindus {
@@ -274,6 +355,7 @@ main {
     margin-bottom: 60px;
     padding-left: 8em;
     padding-right: 8em;
+    
 }
 
 .wheretofindus h2 {
@@ -287,7 +369,6 @@ main {
 .wheretofindus img {
     width: 40px;
     height: auto;
-    position: center;
 
 }
 
