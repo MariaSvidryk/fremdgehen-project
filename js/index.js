@@ -29,3 +29,11 @@ function updateCountdown() {
 // Run every second
 setInterval(updateCountdown, 1000);
 
+const iconImg = document.querySelector('podcast-icon');
+
+function podcastIcon () {
+
+image.style.width = '50%'
+image.style.height = 'auto'
+
+}

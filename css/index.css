@@ -4,7 +4,6 @@
     header nav {
         display: flex;
         align-items: center;
-        
     }
 
     header nav .top-menu {
@@ -18,20 +17,17 @@
         flex-wrap: wrap;
     }
 
-
 }
 :root {
     font-family: league-gothic, sans-serif;
     --color: black;
     --accent-color: white;
 }
-
 body {
     max-width: 100%;
     margin: auto;
    
 }
-
 header {
     background-image:url(../img/cover.jpg);
     background-repeat: no-repeat;
@@ -61,6 +57,10 @@ header {
     font-weight: 400;
     font-size: 4.5rem;
     padding-left: 1.5em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .top-menu {
@@ -98,6 +98,10 @@ header {
     font-size: 3rem;
     text-align: left;
     padding-left: 2.25em;
+    margin-block-start: 0.25em;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
    
 }
 
@@ -126,20 +130,17 @@ header {
 
 
 main {
-    max-width: 1090px;
-   
-    padding-left: 8em;
-    padding-right: 8em;
+    max-width: auto;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .aboutus {
-    min-height: 200px;
-    background-position: top;
     display: flex;
     flex-direction: column; 
-    padding-left: 4em;
-    padding-right: 4em;
+    padding-left: 8em;
+    padding-right: 8em;
     text-align: center;
 }
 
@@ -150,41 +151,170 @@ main {
 }
 
 .aboutus p {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-style: normal; 
     font-weight: 100;
-}
-
-.team h2 {
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 100;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .team {
-    display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 60px;
 }
 
-
-.episodes h2 {
+.team h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 3rem;
-    font-style: normal;
     font-weight: 100;
-    
+}
+
+.members {
+    display: flex;
+    align-items: center;
+    padding-left: 8em;
+    padding-right: 8em;
+}
+
+.members h3 {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.members h4 {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.members p {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    font-size: 1.5rem;
+    font-weight: 150;
+    color: grey;
+    opacity: 70%;
+}
+
+.members img {
+    display: flex;
+    border-top-left-radius: 80%;
+    border-top-right-radius: 80%;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 80%;
+    object-position: left;
+
+}
+
+.members .instagram-icon {
+    width: 40px;
+    height: auto;
 }
 
 .episodes {
-    min-height: 200px;
+    background-color: black;
+    padding-left: 8em;
+    padding-right: 8em;
+}
+
+.episodes h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color:  rgba(255, 251, 0, 0.918);
+        font-size: 3rem;
+        font-weight: 100;
+}
+
+.all-episodes {
     display: flex;
-    flex-direction: column; 
-    text-align: center;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    margin-bottom: 60px;
     }
+
+.all-episodes h3 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.all-episodes p {
+    color: rgba(255, 251, 0, 0.918);
+    font-size: 1.5rem;
+    font-weight: 150;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.podcast-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.wheretofindus {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 60px;
+    padding-left: 8em;
+    padding-right: 8em;
+}
+
+.wheretofindus h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.wheretofindus img {
+    width: 40px;
+    height: auto;
+    position: center;
+
+}
+
+
+.contact {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 60px;
+    background-color: black;
+    padding-left: 8em;
+    padding-right: 8em;
+    color: white
+}
+
+.contact h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:  rgba(255, 251, 0, 0.918);
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.contact h3
+
+
 
 
 
