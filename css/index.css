@@ -1,5 +1,10 @@
  @import url("https://use.typekit.net/eoz2brh.css");
 
+ :root {
+    font-family: league-gothic, sans-serif;
+    --color: black;
+    --accent-color: white;
+}
 
  @media (min-width: 500px) {
 
@@ -28,14 +33,8 @@
         column-count: 1; 
     }
 
-
-
 }
-:root {
-    font-family: league-gothic, sans-serif;
-    --color: black;
-    --accent-color: white;
-}
+
 body {
     max-width: 100%;
     margin: auto;
@@ -377,7 +376,6 @@ main {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 60px;
     background-color: black;
     padding-left: 8em;
     padding-right: 8em;
@@ -393,7 +391,31 @@ main {
     font-weight: 100;
 }
 
-.contact h3
+.contact h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+footer p {
+    color: white;
+    font-weight: 100;
+}
 
 
 

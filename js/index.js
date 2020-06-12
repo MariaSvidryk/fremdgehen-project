@@ -8,7 +8,7 @@
 
    const currentDate = new Date().getFullYear();
 
-  const concertDate = new Date(`June 12 ${currentDate} 00:00:00`);
+  const concertDate = new Date(`June 19 ${currentDate} 09:00:00`);
 
   function updateCountdown() {
      const currentTime = new Date();
