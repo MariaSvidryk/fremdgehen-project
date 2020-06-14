@@ -30,8 +30,3 @@
  setInterval(updateCountdown, 1000);
  
  })();
-
-
-
-
-
